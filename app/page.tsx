@@ -7,7 +7,7 @@ export default function Home() {
 
       {/* HERO */}
       <AnimatedSection>
-        <section className="max-w-5xl mx-auto text-center">
+        <section id ="home" className="max-w-5xl mx-auto text-center">
           <h1 className="text-6xl font-bold mb-6">
             Piyush{" "}
             <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
@@ -26,19 +26,19 @@ export default function Home() {
           </p>
 
           <div className="mt-10 flex justify-center gap-6">
-            <Link
+            <a
               href="/projects"
               className="px-6 py-3 bg-blue-500 rounded-lg font-semibold hover:bg-blue-600 transition"
             >
               View Projects
-            </Link>
+            </a>
 
-            <Link
+            <a
               href="/contact"
               className="px-6 py-3 border border-white/20 rounded-lg hover:bg-white/10 transition"
             >
               Contact Me
-            </Link>
+            </a>
           </div>
         </section>
       </AnimatedSection>
@@ -47,7 +47,7 @@ export default function Home() {
 
       {/* ABOUT */}
       <AnimatedSection>
-        <section className="max-w-4xl mx-auto text-center">
+        <section id="about" className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">About Me</h2>
 
           <p className="text-gray-400 leading-relaxed">
@@ -67,7 +67,7 @@ export default function Home() {
 
       {/* SKILLS */}
       <AnimatedSection>
-        <section className="max-w-5xl mx-auto">
+        <section id="Skills" className="max-w-5xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-10">Skills</h2>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -158,12 +158,12 @@ export default function Home() {
     </div>
 
 
-          <Link
+          <a
             href="/experience"
             className="inline-block mt-6 text-blue-500 hover:underline"
           >
             View full experience →
-          </Link>
+          </a>
         </section>
       </AnimatedSection>
 
@@ -171,7 +171,7 @@ export default function Home() {
 
       {/* RESUME */}
       <AnimatedSection>
-        <section className="max-w-4xl mx-auto text-center">
+        <section id="resume" className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">Resume</h2>
 
           <p className="text-gray-400 mb-8">
@@ -194,7 +194,7 @@ export default function Home() {
 
       {/* CTA */}
       <AnimatedSection>
-        <section className="max-w-4xl mx-auto text-center pb-24">
+        <section id="CTA" className="max-w-4xl mx-auto text-center pb-24">
           <div
             className="bg-[#121212] rounded-2xl p-10 md:p-14 transition
             hover:shadow-xl hover:shadow-blue-500/10"
@@ -209,13 +209,13 @@ export default function Home() {
               problems, let’s connect.
             </p>
 
-            <Link
+            <a
               href="/contact"
               className="inline-block px-10 py-4 bg-blue-500 rounded-lg
               font-semibold hover:bg-blue-600 transition"
             >
               Get in Touch
-            </Link>
+            </a>
           </div>
         </section>
       </AnimatedSection>
