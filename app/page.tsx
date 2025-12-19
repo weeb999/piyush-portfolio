@@ -1,112 +1,133 @@
+"use client";
+
+import Link from "next/link";
 import AnimatedSection from "./components/AnimatedSection";
 
-{/* EXPERIENCE */}
-<AnimatedSection>
-  <section id="experience" className="max-w-4xl mx-auto">
-    <h2 className="text-4xl font-bold text-center mb-10">Experience</h2>
+export default function Home() {
+  return (
+    <main className="pt-32 px-6 space-y-28">
 
-    {/* Full-Time */}
-    <div className="bg-[#121212] p-6 rounded-xl mb-6">
-      <h3 className="text-xl font-semibold">
-        Technology Executive (Software & Systems) — PHN Technology
-      </h3>
-      <p className="text-gray-400 mb-4">2024 – Present</p>
+      {/* HERO */}
+      <AnimatedSection>
+        <section className="max-w-5xl mx-auto text-center">
+          <h1 className="text-6xl font-bold mb-6">
+            Piyush{" "}
+            <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+              Gadiya
+            </span>
+          </h1>
 
-      <ul className="list-disc list-inside text-gray-400 space-y-3">
-        <li>
-          Designed and developed modular software components for <b>ASTOR</b>,
-          a humanoid robot platform, implementing event-driven logic, REST-style
-          APIs, and state-based workflows to manage voice interactions,
-          dialogue flows, and system behavior.
-        </li>
+          <p className="text-xl text-gray-400 mb-8">
+            Software Developer | Cloud | DevOps | AI Systems
+          </p>
 
-        <li>
-          Built an <b>ArUco marker detection and tracking pipeline</b> using
-          computer vision techniques, integrating Python services with
-          backend logic to process real-time camera streams and trigger
-          automated system actions.
-        </li>
+          <p className="text-gray-500 max-w-2xl mx-auto">
+            Technology Executive at PHN Technology with experience building
+            scalable software systems that integrate cloud services,
+            automation pipelines, and intelligent applications.
+          </p>
 
-        <li>
-          Developed control software for a <b>bionic hand system</b>, mapping
-          live sensor data (IMU, flex, and glove inputs) to actuator commands,
-          focusing on latency optimization, data smoothing, and real-time
-          performance.
-        </li>
+          <div className="mt-10 flex justify-center gap-6">
+            <a
+              href="#experience"
+              className="px-6 py-3 bg-blue-500 rounded-lg font-semibold hover:bg-blue-600 transition"
+            >
+              Experience
+            </a>
 
-        <li>
-          Applied core <b>data structures and algorithms</b> (arrays, lists,
-          hash maps, queues) to efficiently process sensor streams, manage
-          task scheduling, and optimize lookup-heavy operations.
-        </li>
+            <a
+              href="#resume"
+              className="px-6 py-3 border border-white/20 rounded-lg hover:bg-white/10 transition"
+            >
+              Resume
+            </a>
+          </div>
+        </section>
+      </AnimatedSection>
 
-        <li>
-          Collaborated with cross-functional teams to integrate software
-          components with hardware systems, following clean code practices,
-          version control (Git), and basic CI workflows.
-        </li>
-      </ul>
-    </div>
+      <div className="max-w-4xl mx-auto border-t border-white/10" />
 
-    {/* Internship - UniConverge */}
-    <div className="bg-[#121212] p-6 rounded-xl mb-6">
-      <h3 className="text-xl font-semibold">
-        Software Developer Intern (Core Java) — UniConverge Technologies
-      </h3>
-      <p className="text-gray-400 mb-4">Aug 2024 – Sep 2024</p>
+      {/* EXPERIENCE */}
+      <AnimatedSection>
+        <section id="experience" className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-10">Experience</h2>
 
-      <ul className="list-disc list-inside text-gray-400 space-y-3">
-        <li>
-          Developed backend application logic using <b>Core Java</b>,
-          implementing object-oriented principles, exception handling,
-          and modular class design.
-        </li>
+          <div className="bg-[#121212] p-6 rounded-xl mb-6">
+            <h3 className="text-xl font-semibold">
+              Technology Executive — PHN Technology
+            </h3>
+            <p className="text-gray-400 mb-4">2024 – Present</p>
 
-        <li>
-          Integrated Java services with <b>SQL databases</b>, writing queries
-          and ensuring reliable data flow between application and persistence
-          layers.
-        </li>
+            <ul className="list-disc list-inside text-gray-400 space-y-3">
+              <li>
+                Designed modular backend-style software components and
+                event-driven workflows for robotics and automation platforms.
+              </li>
+              <li>
+                Integrated Python and Java services with sensor pipelines and
+                real-time data processing systems.
+              </li>
+              <li>
+                Applied data structures, clean code practices, and Git-based
+                workflows in collaborative development environments.
+              </li>
+            </ul>
+          </div>
 
-        <li>
-          Worked with <b>Git-based version control</b>, participating in code
-          reviews and following structured development workflows similar to
-          enterprise software teams.
-        </li>
+          <div className="bg-[#121212] p-6 rounded-xl mb-6">
+            <h3 className="text-xl font-semibold">
+              Software Developer Intern — UniConverge Technologies
+            </h3>
+            <p className="text-gray-400 mb-4">Aug 2024 – Sep 2024</p>
 
-        <li>
-          Gained exposure to <b>cloud deployment concepts</b>, backend APIs,
-          and application testing in distributed environments.
-        </li>
-      </ul>
-    </div>
+            <ul className="list-disc list-inside text-gray-400 space-y-3">
+              <li>
+                Built Java-based backend logic integrated with SQL databases.
+              </li>
+              <li>
+                Worked with Git, APIs, and basic cloud deployment concepts.
+              </li>
+            </ul>
+          </div>
 
-    {/* Internship - Next Forger */}
-    <div className="bg-[#121212] p-6 rounded-xl">
-      <h3 className="text-xl font-semibold">
-        Data Analyst Intern — Next Forger
-      </h3>
-      <p className="text-gray-400 mb-4">Feb 2024 – Jun 2024</p>
+          <div className="bg-[#121212] p-6 rounded-xl">
+            <h3 className="text-xl font-semibold">
+              Data Analyst Intern — Next Forger
+            </h3>
+            <p className="text-gray-400 mb-4">Feb 2024 – Jun 2024</p>
 
-      <ul className="list-disc list-inside text-gray-400 space-y-3">
-        <li>
-          Built analytical dashboards using <b>Excel</b> (pivot tables,
-          formulas, charts) to monitor KPIs, operational workflows, and
-          performance trends.
-        </li>
+            <ul className="list-disc list-inside text-gray-400 space-y-3">
+              <li>
+                Built Excel dashboards and analytical reports for business teams.
+              </li>
+              <li>
+                Used AI prompting tools to generate and validate insights.
+              </li>
+            </ul>
+          </div>
+        </section>
+      </AnimatedSection>
 
-        <li>
-          Leveraged <b>AI-assisted prompting</b> to generate exploratory
-          insights, queries, and documentation, validating outputs through
-          statistical reasoning and business logic.
-        </li>
+      <div className="max-w-4xl mx-auto border-t border-white/10" />
 
-        <li>
-          Collaborated with software developers to deliver
-          <b>cleaned, API-ready datasets</b> and analytical outputs suitable
-          for backend integration and reporting systems.
-        </li>
-      </ul>
-    </div>
-  </section>
-</AnimatedSection>
+      {/* RESUME */}
+      <AnimatedSection>
+        <section
+          id="resume"
+          className="max-w-4xl mx-auto text-center pb-24"
+        >
+          <h2 className="text-4xl font-bold mb-6">Resume</h2>
+
+          <a
+            href="/resume/Piyush_Gadiya_Resume.pdf"
+            target="_blank"
+            className="inline-block px-8 py-4 bg-blue-500 rounded-lg font-semibold hover:bg-blue-600 transition"
+          >
+            View / Download Resume
+          </a>
+        </section>
+      </AnimatedSection>
+
+    </main>
+  );
+}
