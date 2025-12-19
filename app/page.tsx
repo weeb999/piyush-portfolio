@@ -117,10 +117,27 @@ export default function Home() {
       <p className="text-gray-400 mb-4">2024 – Present</p>
 
       <ul className="list-disc list-inside text-gray-400 space-y-2">
-        <li>Worked on ASTOR humanoid robot with advanced voice modulation</li>
-        <li>Developed a bionic hand capable of mimicking live human gestures</li>
-        <li>Built a smart inventory application for sensors and components</li>
-        <li>Applied AI/ML concepts and data analytics in robotics systems</li>
+
+<li>Designed and implemented software components for ASTOR,
+   a humanoid robot with voice modulation and interactive behaviour, using modular code structures, event‑driven logic, and API integrations to control dialogue flows and state transitions.</li>
+<li>Built a smart ArUco scanning pipeline to detect and track ArUco markers from camera feeds,
+   integrating OpenCV‑style image processing and Python/Java services to trigger actions in robotics and dashboard interfaces.</li>
+<li>Developed control logic for a bionic hand with 3D‑printed components, wiring sensor data (glove/IMU/flex sensors)
+   to motor commands and writing mapping algorithms that convert live hand gestures into smooth, real‑time actuation.</li>
+<li>Created internal tools (CLI utilities, scripts, and small web UIs) to support robotics demos and lab workflows,
+   applying core concepts like OOP, collections, error handling, and REST communication in Java and Python.</li>
+<li>Collaborated with senior engineers using Git, code reviews, and branching strategies,
+   improving code quality and learning industry‑standard practices for feature development, refactoring, and debugging.</li>
+<li>Applied data structures and algorithms (arrays, lists, hash maps, basic graph/queue logic) in project code to handle sensor streams, 
+  lookups, and task scheduling efficiently, demonstrating readiness for large‑scale systems.</li>
+<li>Documented architecture, APIs, and usage steps for each project, enabling other team members to reuse components and extend features in a maintainable way.</li>
+<li>Tech stack at PHN: 
+  Java, Python, basic C/C++ for microcontrollers;
+   REST APIs; OpenCV‑style computer vision and ArUco workflows; 
+   Git and GitHub; Linux terminal; 3D printing workflows; basic robotics frameworks; 
+   data structures and algorithms fundamentals.</li>
+
+
       </ul>
     </div>
 
