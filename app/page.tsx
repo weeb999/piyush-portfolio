@@ -3,7 +3,7 @@ import AnimatedSection from "./components/AnimatedSection";
 
 export default function Home() {
   return (
-    <main className="pt-32 px-6 space-y-32">
+    <main className="pt-32 px-6 space-y-28">
 
       {/* HERO */}
       <AnimatedSection>
@@ -21,20 +21,21 @@ export default function Home() {
 
           <p className="text-gray-500 max-w-2xl mx-auto">
             Technology Executive at PHN Technology with hands-on experience
-            building intelligent systems that bridge software, AI, and robotics.
+            building intelligent systems that combine software, AI, and robotics
+            for real-world applications.
           </p>
 
           <div className="mt-10 flex justify-center gap-6">
             <Link
               href="/projects"
-              className="px-6 py-3 bg-blue-500 rounded font-semibold hover:bg-blue-600 transition"
+              className="px-6 py-3 bg-blue-500 rounded-lg font-semibold hover:bg-blue-600 transition"
             >
               View Projects
             </Link>
 
             <Link
               href="/contact"
-              className="px-6 py-3 border border-white/20 rounded hover:bg-white/10 transition"
+              className="px-6 py-3 border border-white/20 rounded-lg hover:bg-white/10 transition"
             >
               Contact Me
             </Link>
@@ -42,7 +43,6 @@ export default function Home() {
         </section>
       </AnimatedSection>
 
-      {/* SEPARATOR */}
       <div className="max-w-4xl mx-auto border-t border-white/10" />
 
       {/* ABOUT */}
@@ -52,17 +52,17 @@ export default function Home() {
 
           <p className="text-gray-400 leading-relaxed">
             I am a technology-driven software developer currently working at
-            PHN Technology, where I collaborate on real-world robotics and AI
-            solutions. My work spans humanoid robots, gesture-controlled systems,
-            smart applications, and data-driven workflows.
+            PHN Technology, where I contribute to robotics and AI-based systems.
+            My experience spans humanoid robots, gesture-controlled devices,
+            smart inventory applications, and data-driven workflows.
             <br /><br />
-            I enjoy solving complex problems using Java and Python, applying AI/ML
-            concepts, and building scalable systems that integrate hardware and software.
+            I enjoy solving problems using Java and Python, exploring AI/ML
+            concepts, and building scalable software that integrates seamlessly
+            with hardware systems.
           </p>
         </section>
       </AnimatedSection>
 
-      {/* SEPARATOR */}
       <div className="max-w-4xl mx-auto border-t border-white/10" />
 
       {/* SKILLS */}
@@ -74,10 +74,10 @@ export default function Home() {
             {[
               {
                 title: "Software Development",
-                skills: ["Java", "Python", "Problem Solving", "APIs"],
+                skills: ["Java", "Python", "Problem Solving", "APIs", "Git"],
               },
               {
-                title: "AI / Data",
+                title: "AI & Data",
                 skills: ["AI & ML", "Prompt Engineering", "Data Analysis", "Excel"],
               },
               {
@@ -90,9 +90,7 @@ export default function Home() {
                 className="bg-[#121212] p-6 rounded-xl transition
                 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-500/10"
               >
-                <h3 className="text-xl font-semibold mb-4">
-                  {group.title}
-                </h3>
+                <h3 className="text-xl font-semibold mb-4">{group.title}</h3>
                 <ul className="text-gray-400 space-y-2">
                   {group.skills.map((skill) => (
                     <li key={skill}>• {skill}</li>
@@ -104,28 +102,57 @@ export default function Home() {
         </section>
       </AnimatedSection>
 
-      {/* SEPARATOR */}
       <div className="max-w-4xl mx-auto border-t border-white/10" />
 
-      {/* EXPERIENCE PREVIEW */}
-      <AnimatedSection>
-        <section className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">Experience</h2>
+      {/* EXPERIENCE */}
+<AnimatedSection>
+  <section id="experience" className="max-w-4xl mx-auto">
+    <h2 className="text-4xl font-bold text-center mb-10">Experience</h2>
 
-          <div className="bg-[#121212] p-6 rounded-xl text-left transition
-          hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-500/10">
-            <h3 className="text-xl font-semibold">
-              Technology Executive — PHN Technology
-            </h3>
-            <p className="text-gray-400 mb-4">2024 – Present</p>
+    {/* Full-Time */}
+    <div className="bg-[#121212] p-6 rounded-xl mb-6">
+      <h3 className="text-xl font-semibold">
+        Technology Executive — PHN Technology
+      </h3>
+      <p className="text-gray-400 mb-4">2024 – Present</p>
 
-            <ul className="list-disc list-inside text-gray-400 space-y-2">
-              <li>Worked on ASTOR, a humanoid robot with voice modulation</li>
-              <li>Developed a bionic hand mimicking real-time human gestures</li>
-              <li>Built a smart inventory app for fast sensor identification</li>
-              <li>Applied AI/ML and data analytics in real-world systems</li>
-            </ul>
-          </div>
+      <ul className="list-disc list-inside text-gray-400 space-y-2">
+        <li>Worked on ASTOR humanoid robot with advanced voice modulation</li>
+        <li>Developed a bionic hand capable of mimicking live human gestures</li>
+        <li>Built a smart inventory application for sensors and components</li>
+        <li>Applied AI/ML concepts and data analytics in robotics systems</li>
+      </ul>
+    </div>
+
+    {/* Internship - UniConverge */}
+    <div className="bg-[#121212] p-6 rounded-xl mb-6">
+      <h3 className="text-xl font-semibold">
+        Core Java Developer Intern — UniConverge Technologies
+      </h3>
+      <p className="text-gray-400 mb-4">Aug 2024 – Sep 2024</p>
+
+      <ul className="list-disc list-inside text-gray-400 space-y-2">
+        <li>Developed and tested applications using Core Java</li>
+        <li>Strengthened problem-solving and object-oriented programming skills</li>
+        <li>Worked on real-world Java use cases in a professional setup</li>
+      </ul>
+    </div>
+
+    {/* Internship - Next Forger */}
+    <div className="bg-[#121212] p-6 rounded-xl">
+      <h3 className="text-xl font-semibold">
+        Data Analyst Intern — Next Forger
+      </h3>
+      <p className="text-gray-400 mb-4">Feb 2024 – Jun 2024</p>
+
+      <ul className="list-disc list-inside text-gray-400 space-y-2">
+        <li>Performed data preprocessing on internal company portals</li>
+        <li>Monitored workflows and ensured database integrity</li>
+        <li>Assisted teams with reporting and data analysis tasks</li>
+      </ul>
+    </div>
+  
+
 
           <Link
             href="/experience"
@@ -136,46 +163,57 @@ export default function Home() {
         </section>
       </AnimatedSection>
 
-      {/* SEPARATOR */}
+      <div className="max-w-4xl mx-auto border-t border-white/10" />
+
+      {/* RESUME */}
+      <AnimatedSection>
+        <section className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-6">Resume</h2>
+
+          <p className="text-gray-400 mb-8">
+            Download my resume to learn more about my professional experience,
+            projects, and technical skills.
+          </p>
+
+          <a
+            href="/resume/Piyush_Gadiya_Resume.pdf"
+            target="_blank"
+            className="inline-block px-8 py-4 bg-blue-500 rounded-lg
+            font-semibold hover:bg-blue-600 transition"
+          >
+            Download Resume
+          </a>
+        </section>
+      </AnimatedSection>
+
       <div className="max-w-4xl mx-auto border-t border-white/10" />
 
       {/* CTA */}
       <AnimatedSection>
-        <section className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">
-            Let’s Build Something Impactful
-          </h2>
-
-          <p className="text-gray-400 mb-8">
-            I’m open to software development, AI, and cloud-focused opportunities.
-            Let’s connect and collaborate.
-          </p>
-
-          <Link
-            href="/contact"
-            className="px-8 py-4 bg-blue-500 rounded font-semibold hover:bg-blue-600 transition"
+        <section className="max-w-4xl mx-auto text-center pb-24">
+          <div
+            className="bg-[#121212] rounded-2xl p-10 md:p-14 transition
+            hover:shadow-xl hover:shadow-blue-500/10"
           >
-            Get in Touch
-          </Link>
+            <h2 className="text-4xl font-bold mb-6">
+              Let’s Build Something Impactful
+            </h2>
+
+            <p className="text-gray-400 mb-10 max-w-2xl mx-auto">
+              I’m open to software development, AI, and cloud-focused roles.
+              If you’re looking for someone who enjoys solving real-world
+              problems, let’s connect.
+            </p>
+
+            <Link
+              href="/contact"
+              className="inline-block px-10 py-4 bg-blue-500 rounded-lg
+              font-semibold hover:bg-blue-600 transition"
+            >
+              Get in Touch
+            </Link>
+          </div>
         </section>
-        <section className="max-w-4xl mx-auto text-center">
-  <h2 className="text-4xl font-bold mb-6">Resume</h2>
-
-  <p className="text-gray-400 mb-8">
-    Download my resume to learn more about my experience,
-    projects, and technical skills.
-  </p>
-
-  <a
-    href="/resume/Piyush_Gadiya_Resume.pdf"
-    target="_blank"
-    className="inline-block px-8 py-4 bg-blue-500 rounded
-    font-semibold hover:bg-blue-600 transition"
-  >
-    Download Resume
-  </a>
-</section>
-
       </AnimatedSection>
 
     </main>
