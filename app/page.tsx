@@ -1,10 +1,11 @@
 "use client";
 
 import AnimatedSection from "./components/AnimatedSection";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="pt-32 px-6 space-y-28">
+    <main className="pt-32 px-6 space-y-28">  
 
       {/* HERO */}
       <AnimatedSection>
@@ -115,131 +116,156 @@ export default function Home() {
         </section>
       </AnimatedSection>
       {/* PROJECTS */}
+/* PROJECTS */
 <AnimatedSection>
   <section id="projects" className="max-w-6xl mx-auto">
-    <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
+    <h2 className="text-3xl font-semibold text-center mb-10">
+      Selected Projects
+    </h2>
 
-    <div className="grid md:grid-cols-2 gap-8">
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-      {/* ASTOR */}
-      <div className="bg-[#121212] p-6 rounded-xl hover:shadow-xl hover:shadow-blue-500/10 transition">
-        <h3 className="text-xl font-semibold mb-3">
-          ASTOR – Humanoid Robot System
-        </h3>
+      {[
+        {
+          title: "Skin Cancer Prediction",
+          desc: "CNN-based medical image classifier",
+          stack: "Python • CNN • Flask",
+          link: "https://github.com/weeb999/Skin-Cancer-Prediction",
+          img: "/images/projects/skin-cancer.png",
+        },
+        {
+          title: "Aster Humanoid Robot",
+          desc: "Voice & state-driven humanoid system",
+          stack: "Java • Python • Robotics",
+          link: "https://github.com/weeb999/Aster-humanoid",
+          img: "/images/projects/aster.png",
+        },
+        {
+          title: "Bionic Hand",
+          desc: "Gesture-controlled robotic hand",
+          stack: "Sensors • Control Logic",
+          link: "https://github.com/weeb999/bionic-hand",
+          img: "/images/projects/bionic-hand.png",
+        },
+        {
+          title: "Smart Inventory",
+          desc: "Hardware inventory tracker",
+          stack: "Backend • Database",
+          link: "https://github.com/weeb999/smart-inventory",
+          img: "/images/projects/inventory.png",
+        },
+      ].map((project) => (
+        <a
+          key={project.title}
+          href={project.link}
+          target="_blank"
+          className="group bg-white border rounded-xl overflow-hidden
+          hover:shadow-lg hover:-translate-y-1 transition"
+        >
+          <div className="relative h-40 w-full">
+            <Image
+              src={project.img}
+              alt={project.title}
+              fill
+              className="object-cover group-hover:scale-105 transition"
+            />
+          </div>
 
-        <p className="text-gray-400 mb-4">
-          Software system for a humanoid robot featuring voice modulation,
-          interactive dialogue handling, and real-time state transitions.
-        </p>
+          <div className="p-5">
+            <h3 className="font-semibold mb-1 group-hover:text-emerald-600">
+              {project.title}
+            </h3>
 
-        <ul className="text-gray-400 text-sm space-y-2 mb-6">
-          <li>• Java & Python backend logic</li>
-          <li>• Event-driven architecture</li>
-          <li>• Sensor & hardware integration</li>
-        </ul>
+            <p className="text-sm text-gray-600 mb-2">
+              {project.desc}
+            </p>
 
-        <div className="flex gap-4">
-          <a
-            href="https://github.com/weeb999/astor-humanoid"
-            target="_blank"
-            className="text-blue-500 hover:underline"
-          >
-            GitHub →
-          </a>
-        </div>
-      </div>
-
-      {/* BIONIC HAND */}
-      <div className="bg-[#121212] p-6 rounded-xl hover:shadow-xl hover:shadow-blue-500/10 transition">
-        <h3 className="text-xl font-semibold mb-3">
-          Gesture Controlled Bionic Hand
-        </h3>
-
-        <p className="text-gray-400 mb-4">
-          Real-time gesture-controlled bionic hand using sensor input mapping
-          and optimized control algorithms.
-        </p>
-
-        <ul className="text-gray-400 text-sm space-y-2 mb-6">
-          <li>• IMU & flex sensor integration</li>
-          <li>• Real-time motor control</li>
-          <li>• Algorithmic gesture mapping</li>
-        </ul>
-
-        <div className="flex gap-4">
-          <a
-            href="https://github.com/weeb999/bionic-hand"
-            target="_blank"
-            className="text-blue-500 hover:underline"
-          >
-            GitHub →
-          </a>
-        </div>
-      </div>
-
-      {/* SMART INVENTORY */}
-      <div className="bg-[#121212] p-6 rounded-xl hover:shadow-xl hover:shadow-blue-500/10 transition">
-        <h3 className="text-xl font-semibold mb-3">
-          Smart Inventory Management App
-        </h3>
-
-        <p className="text-gray-400 mb-4">
-          Inventory system to track sensors and hardware components efficiently
-          for robotics and software projects.
-        </p>
-
-        <ul className="text-gray-400 text-sm space-y-2 mb-6">
-          <li>• Backend CRUD APIs</li>
-          <li>• Search & filtering logic</li>
-          <li>• Database integration</li>
-        </ul>
-
-        <div className="flex gap-4">
-          <a
-            href="https://github.com/weeb999/smart-inventory"
-            target="_blank"
-            className="text-blue-500 hover:underline"
-          >
-            GitHub →
-          </a>
-        </div>
-      </div>
-{/* Skin Cancer Prediction */}
-<div className="bg-[#121212] p-6 rounded-xl hover:shadow-xl hover:shadow-blue-500/10 transition">
-  <h3 className="text-xl font-semibold mb-3">
-    Skin Cancer Prediction System
-  </h3>
-
-  <p className="text-gray-400 mb-4">
-    A deep-learning classifier for dermoscopic images to detect
-    potential skin cancer types using a **Convolutional Neural Network (CNN)**.
-  </p>
-
-  <ul className="text-gray-400 text-sm space-y-2 mb-6">
-    <li>• Image preprocessing & augmentation</li>
-    <li>• CNN model training and evaluation</li>
-    <li>• Flask-based web interface for prediction</li>
-    <li>• Accuracy optimization and ROC/confusion analysis</li>
-  </ul>
-
-  <div className="flex gap-4">
-    <a
-      href="https://github.com/weeb999/Skin-Cancer-Prediction"
-      target="_blank"
-      className="text-blue-500 hover:underline"
-    >
-      GitHub →
-    </a>
-  </div>
-</div>
-
-
+            <p className="text-xs text-gray-400">
+              {project.stack}
+            </p>
+          </div>
+        </a>
+      ))}
     </div>
   </section>
 </AnimatedSection>
 
 
+
       <div className="max-w-5xl mx-auto border-t border-white/10" />
+
+      {/* CERTIFICATIONS */}
+<AnimatedSection>
+  <section id="certificates" className="max-w-5xl mx-auto">
+    <h2 className="text-3xl font-semibold text-center mb-10">
+      Certifications
+    </h2>
+
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      {/* UniConverge */}
+      <div
+        className="bg-white border rounded-xl p-6
+        hover:shadow-md hover:-translate-y-1 transition"
+      >
+        <h3 className="font-semibold mb-2">
+          Software Developer Certification
+        </h3>
+
+        <p className="text-sm text-gray-600 mb-3">
+          Hands-on training in Core Java, backend development concepts,
+          databases, Git workflows, and software engineering fundamentals.
+        </p>
+
+        <p className="text-xs text-gray-400">
+          Issued by: UniConverge Technologies
+        </p>
+      </div>
+
+      {/* Udemy Java */}
+      <div
+        className="bg-white border rounded-xl p-6
+        hover:shadow-md hover:-translate-y-1 transition"
+      >
+        <h3 className="font-semibold mb-2">
+          Java Programming (Udemy)
+        </h3>
+
+        <p className="text-sm text-gray-600 mb-3">
+          In-depth Java programming covering OOP principles,
+          exception handling, collections, multithreading,
+          and backend-ready coding practices.
+        </p>
+
+        <p className="text-xs text-gray-400">
+          Issued by: Udemy
+        </p>
+      </div>
+
+      {/* DSA + LeetCode */}
+      <div
+        className="bg-white border rounded-xl p-6
+        hover:shadow-md hover:-translate-y-1 transition"
+      >
+        <h3 className="font-semibold mb-2">
+          Data Structures & Algorithms + 100 LeetCode Problems
+        </h3>
+
+        <p className="text-sm text-gray-600 mb-3">
+          Strong foundation in arrays, linked lists, stacks, queues,
+          recursion, hashing, trees, and problem-solving through
+          consistent LeetCode practice.
+        </p>
+
+        <p className="text-xs text-gray-400">
+          Issued by: Udemy / Self-Practice
+        </p>
+      </div>
+
+    </div>
+  </section>
+</AnimatedSection>
+
 
       {/* EXPERIENCE */}
       <AnimatedSection>
