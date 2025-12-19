@@ -2,7 +2,7 @@ import AnimatedSection from "../components/AnimatedSection";
 
 const projects = [
   {
-    title: "ASTOR – Humanoid Robot",
+    title: "ASTER – Humanoid Robot",
     description:
       "A humanoid robot with voice modulation and intelligent interaction capabilities, integrating AI concepts with real-world robotics systems.",
     tech: ["Python", "AI", "Robotics", "Voice Processing"],

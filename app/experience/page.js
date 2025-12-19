@@ -10,8 +10,7 @@ export default function Experience() {
           Hands-on with robotics, AI/ML systems, data analytics using Excel and Python,
           prompt engineering, humanoid robots, bionic systems, and smart inventory solutions.
           Aligned solutions with core IT development principles.
-        </p>
-        
+        </p>        
       </div>
     </main>
   );

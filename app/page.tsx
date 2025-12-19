@@ -5,7 +5,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="pt-32 px-6 space-y-28">  
+    <main className="pt-40 px-6 space-y-28">
+
 
       {/* HERO */}
       <AnimatedSection>
@@ -50,7 +51,8 @@ export default function Home() {
       {/* SKILLS */}
       <AnimatedSection>
         <section id="skills" className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-10">Skills</h2>
+          <h2 className="text-4xl font-extrabold text-center mb-14 text-gray-950 tracking-tight">
+Skills</h2>
 
           <div className="overflow-x-auto">
             <table className="w-full border border-white/10 rounded-xl overflow-hidden">
@@ -119,7 +121,8 @@ export default function Home() {
 /* PROJECTS */
 <AnimatedSection>
   <section id="projects" className="max-w-6xl mx-auto">
-   <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+  <h2 className="text-4xl font-extrabold text-center mb-14 text-gray-950 tracking-tight">
+
 
       Selected Projects
     </h2>
@@ -198,7 +201,8 @@ export default function Home() {
       {/* EDUCATION */}
 <AnimatedSection>
   <section id="education" className="max-w-4xl mx-auto">
-    <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+    <h2 className="text-4xl font-extrabold text-center mb-14 text-gray-950 tracking-tight">
+
       Education
     </h2>
 
@@ -306,7 +310,8 @@ export default function Home() {
 {/* CERTIFICATES */}
 <AnimatedSection>
   <section id="certificates" className="max-w-5xl mx-auto">
-   <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+   <h2 className="text-4xl font-extrabold text-center mb-14 text-gray-950 tracking-tight">
+
 
       Certifications
     </h2>
@@ -363,7 +368,8 @@ export default function Home() {
       {/* EXPERIENCE */}
       <AnimatedSection>
         <section id="experience" className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-10">Experience</h2>
+          <h2 className="text-4xl font-extrabold text-center mb-14 text-gray-950 tracking-tight"></h2>
+
 
           <div className="bg-[#121212] p-6 rounded-xl mb-6">
             <h3 className="text-xl font-semibold">
@@ -463,7 +469,8 @@ export default function Home() {
   id="contact"
   className="max-w-4xl mx-auto text-center py-20"
 >
-  <h2 className="text-3xl font-semibold mb-6">
+  <h2 className="text-4xl font-extrabold text-center mb-14 text-gray-950 tracking-tight">
+
     Get in Touch
   </h2>
 
