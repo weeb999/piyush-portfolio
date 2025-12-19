@@ -124,20 +124,8 @@ export default function Home() {
    integrating OpenCV‑style image processing and Python/Java services to trigger actions in robotics and dashboard interfaces.</li>
 <li>Developed control logic for a bionic hand with 3D‑printed components, wiring sensor data (glove/IMU/flex sensors)
    to motor commands and writing mapping algorithms that convert live hand gestures into smooth, real‑time actuation.</li>
-<li>Created internal tools (CLI utilities, scripts, and small web UIs) to support robotics demos and lab workflows,
-   applying core concepts like OOP, collections, error handling, and REST communication in Java and Python.</li>
-<li>Collaborated with senior engineers using Git, code reviews, and branching strategies,
-   improving code quality and learning industry‑standard practices for feature development, refactoring, and debugging.</li>
 <li>Applied data structures and algorithms (arrays, lists, hash maps, basic graph/queue logic) in project code to handle sensor streams, 
   lookups, and task scheduling efficiently, demonstrating readiness for large‑scale systems.</li>
-<li>Documented architecture, APIs, and usage steps for each project, enabling other team members to reuse components and extend features in a maintainable way.</li>
-<li>Tech stack at PHN: 
-  Java, Python, basic C/C++ for microcontrollers;
-   REST APIs; OpenCV‑style computer vision and ArUco workflows; 
-   Git and GitHub; Linux terminal; 3D printing workflows; basic robotics frameworks; 
-   data structures and algorithms fundamentals.</li>
-
-
       </ul>
     </div>
 
@@ -149,9 +137,9 @@ export default function Home() {
       <p className="text-gray-400 mb-4">Aug 2024 – Sep 2024</p>
 
       <ul className="list-disc list-inside text-gray-400 space-y-2">
-        <li>Developed and tested applications using Core Java</li>
-        <li>Strengthened problem-solving and object-oriented programming skills</li>
-        <li>Worked on real-world Java use cases in a professional setup</li>
+        <li>Worked with database‑backed logic, wiring Java code to SQL operations and ensuring correct data flow between service and persistence layers.</li>
+        <li>Used Git and code reviews in a team environment, aligning with standard engineering practices followed in large product companies.</li>
+        <li>Contributed to backend APIs designed for cloud deployment, gaining exposure to deploying and testing services on cloud platforms.</li>
       </ul>
     </div>
 
@@ -163,9 +151,9 @@ export default function Home() {
       <p className="text-gray-400 mb-4">Feb 2024 – Jun 2024</p>
 
       <ul className="list-disc list-inside text-gray-400 space-y-2">
-        <li>Performed data preprocessing on internal company portals</li>
-        <li>Monitored workflows and ensured database integrity</li>
-        <li>Assisted teams with reporting and data analysis tasks</li>
+        <li>Built Excel dashboards with pivot tables, charts, and formulas to track key metrics and help teams monitor workflows and performance.</li>
+        <li>sed prompting with AI tools to generate exploratory queries, insights, and documentation, then validated and refined results with statistical checks and domain logic.</li>
+        <li>Collaborated with developers to integrate analytical outputs into applications, sharing cleaned datasets, API‑ready views, and clear requirements for backend usage.</li>
       </ul>
     </div>
 
