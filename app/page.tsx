@@ -119,7 +119,8 @@ export default function Home() {
 /* PROJECTS */
 <AnimatedSection>
   <section id="projects" className="max-w-6xl mx-auto">
-    <h2 className="text-3xl font-semibold text-center mb-10">
+   <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+
       Selected Projects
     </h2>
 
@@ -194,11 +195,119 @@ export default function Home() {
 
       <div className="max-w-5xl mx-auto border-t border-white/10" />
 
+      {/* EDUCATION */}
+<AnimatedSection>
+  <section id="education" className="max-w-4xl mx-auto">
+    <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+      Education
+    </h2>
+
+    <div className="space-y-6">
+
+      {/* BE */}
+      <div
+        className="bg-white border rounded-xl p-6
+        hover:shadow-md transition"
+      >
+        <h3 className="text-lg font-semibold">
+          Bachelor of Engineering (B.E.) — Information Technology
+        </h3>
+
+        <p className="text-gray-700">
+          Sinhgad Institutes
+        </p>
+
+        <p className="text-sm text-gray-500 mt-1">
+          2021 – 2025 | CGPA: <strong>8.8</strong>
+        </p>
+
+        <ul className="list-disc list-inside text-gray-600 mt-4 space-y-2">
+          <li>
+            Built a strong foundation in Data Structures, Algorithms,
+            Object-Oriented Programming, Database Management Systems,
+            Operating Systems, and Computer Networks.
+          </li>
+          <li>
+            Completed multiple hands-on projects involving backend
+            development, cloud fundamentals, AI/ML applications,
+            and system design concepts.
+          </li>
+          <li>
+            Actively participated in technical training programs,
+            internships, and real-world problem-solving initiatives.
+          </li>
+        </ul>
+      </div>
+
+      {/* JR COLLEGE */}
+      <div
+        className="bg-white border rounded-xl p-6
+        hover:shadow-md transition"
+      >
+        <h3 className="text-lg font-semibold">
+          Higher Secondary Education (12th Grade)
+        </h3>
+
+        <p className="text-gray-700">
+          Sinhgad College of Science
+        </p>
+
+        <p className="text-sm text-gray-500 mt-1">
+          Percentage: <strong>90%</strong>
+        </p>
+
+        <ul className="list-disc list-inside text-gray-600 mt-4 space-y-2">
+          <li>
+            Specialized in Science stream with focus on Mathematics
+            and Computer Science fundamentals.
+          </li>
+          <li>
+            Developed analytical thinking and problem-solving skills
+            essential for engineering and software development.
+          </li>
+        </ul>
+      </div>
+
+      {/* SCHOOL */}
+      <div
+        className="bg-white border rounded-xl p-6
+        hover:shadow-md transition"
+      >
+        <h3 className="text-lg font-semibold">
+          Secondary Education (10th Grade)
+        </h3>
+
+        <p className="text-gray-700">
+          Sarhad English Medium School
+        </p>
+
+        <p className="text-sm text-gray-500 mt-1">
+          Percentage: <strong>82%</strong>
+        </p>
+
+        <ul className="list-disc list-inside text-gray-600 mt-4 space-y-2">
+          <li>
+            Built strong fundamentals in Mathematics, Science,
+            and logical reasoning.
+          </li>
+          <li>
+            Developed disciplined study habits and early interest
+            in technology and problem solving.
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+</AnimatedSection>
+
+
       {/* CERTIFICATIONS */}
 {/* CERTIFICATES */}
 <AnimatedSection>
   <section id="certificates" className="max-w-5xl mx-auto">
-    <h2 className="text-3xl font-semibold text-center mb-10">
+   <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+
       Certifications
     </h2>
 
