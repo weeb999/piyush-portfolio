@@ -11,6 +11,14 @@ export default function Navbar() {
           <Link href="/experience">Experience</Link>
           <Link href="/projects">Projects</Link>
           <Link href="/contact">Contact</Link>
+          <a
+  href="/resume/Piyush_Gadiya_Resume.pdf"
+  target="_blank"
+  className="hover:text-white transition"
+>
+  Resume
+</a>
+
         </div>
       </div>
     </nav>
