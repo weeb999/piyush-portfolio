@@ -11,6 +11,7 @@ export default function Experience() {
           prompt engineering, humanoid robots, bionic systems, and smart inventory solutions.
           Aligned solutions with core IT development principles.
         </p>
+        
       </div>
     </main>
   );

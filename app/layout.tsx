@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "./components/navbar";
 import Footer from "./components/Footer";
+import FloatingContact from "./components/FloatingContact";
 
 export const metadata = {
   title: "Piyush Gadiya | Software Developer",
@@ -14,10 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[#0b0b0b] text-white">
-        <Navbar />
+      <body>
         {children}
-        <Footer />
+        <FloatingContact />
       </body>
     </html>
   );

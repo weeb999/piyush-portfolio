@@ -1,4 +1,5 @@
-import Link from "next/link";
+"use client";
+
 import AnimatedSection from "./components/AnimatedSection";
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
 
       {/* HERO */}
       <AnimatedSection>
-        <section id ="home" className="max-w-5xl mx-auto text-center">
+        <section id="home" className="max-w-5xl mx-auto text-center">
           <h1 className="text-6xl font-bold mb-6">
             Piyush{" "}
             <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
@@ -16,205 +17,272 @@ export default function Home() {
           </h1>
 
           <p className="text-xl text-gray-400 mb-8">
-            Software Developer | AI & Robotics | Cloud Enthusiast
+            Software Developer | Cloud | DevOps | Backend Systems
           </p>
 
           <p className="text-gray-500 max-w-2xl mx-auto">
-            Technology Executive at PHN Technology with hands-on experience
-            building intelligent systems that combine software, AI, and robotics
-            for real-world applications.
+            Technology Executive at PHN Technology with experience building
+            scalable backend systems, cloud-ready services, automation pipelines,
+            and data-driven applications.
           </p>
 
           <div className="mt-10 flex justify-center gap-6">
             <a
-              href="/projects"
+              href="#experience"
               className="px-6 py-3 bg-blue-500 rounded-lg font-semibold hover:bg-blue-600 transition"
             >
-              View Projects
+              Experience
             </a>
 
             <a
-              href="/contact"
+              href="#contact"
               className="px-6 py-3 border border-white/20 rounded-lg hover:bg-white/10 transition"
             >
-              Contact Me
+              Contact
             </a>
           </div>
         </section>
       </AnimatedSection>
 
-      <div className="max-w-4xl mx-auto border-t border-white/10" />
-
-      {/* ABOUT */}
-      <AnimatedSection>
-        <section id="about" className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">About Me</h2>
-
-          <p className="text-gray-400 leading-relaxed">
-            I am a technology-driven software developer currently working at
-            PHN Technology, where I contribute to robotics and AI-based systems.
-            My experience spans humanoid robots, gesture-controlled devices,
-            smart inventory applications, and data-driven workflows.
-            <br /><br />
-            I enjoy solving problems using Java and Python, exploring AI/ML
-            concepts, and building scalable software that integrates seamlessly
-            with hardware systems.
-          </p>
-        </section>
-      </AnimatedSection>
-
-      <div className="max-w-4xl mx-auto border-t border-white/10" />
+      <div className="max-w-5xl mx-auto border-t border-white/10" />
 
       {/* SKILLS */}
       <AnimatedSection>
-        <section id="Skills" className="max-w-5xl mx-auto">
+        <section id="skills" className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-10">Skills</h2>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              {
-                title: "Software Development",
-                skills: ["Java", "Python", "Problem Solving", "APIs", "Git"],
-              },
-              {
-                title: "AI & Data",
-                skills: ["AI & ML", "Prompt Engineering", "Data Analysis", "Excel"],
-              },
-              {
-                title: "Robotics & Systems",
-                skills: ["Humanoid Robots", "Bionic Hand", "Sensors", "Automation"],
-              },
-            ].map((group) => (
-              <div
-                key={group.title}
-                className="bg-[#121212] p-6 rounded-xl transition
-                hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-500/10"
-              >
-                <h3 className="text-xl font-semibold mb-4">{group.title}</h3>
-                <ul className="text-gray-400 space-y-2">
-                  {group.skills.map((skill) => (
-                    <li key={skill}>• {skill}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+          <div className="overflow-x-auto">
+            <table className="w-full border border-white/10 rounded-xl overflow-hidden">
+              <thead className="bg-[#121212]">
+                <tr>
+                  <th className="px-6 py-4 text-left">Category</th>
+                  <th className="px-6 py-4 text-left">Technologies</th>
+                  <th className="px-6 py-4 text-left">Level</th>
+                </tr>
+              </thead>
+
+              <tbody className="divide-y divide-white/10 text-gray-400">
+                <tr className="hover:bg-white/5 transition">
+                  <td className="px-6 py-4">Backend Development</td>
+                  <td className="px-6 py-4">
+                    Java, Python, REST APIs, OOP, Data Structures
+                  </td>
+                  <td className="px-6 py-4 text-green-400">Strong</td>
+                </tr>
+
+                <tr className="hover:bg-white/5 transition">
+                  <td className="px-6 py-4">Databases</td>
+                  <td className="px-6 py-4">
+                    MySQL, SQL Queries, Data Modeling
+                  </td>
+                  <td className="px-6 py-4 text-green-400">Strong</td>
+                </tr>
+
+                <tr className="hover:bg-white/5 transition">
+                  <td className="px-6 py-4">Cloud & DevOps</td>
+                  <td className="px-6 py-4">
+                    AWS (EC2, S3), CI/CD Basics, Linux, GitHub Actions (Basics)
+                  </td>
+                  <td className="px-6 py-4 text-yellow-400">Intermediate</td>
+                </tr>
+
+                <tr className="hover:bg-white/5 transition">
+                  <td className="px-6 py-4">Frameworks & Tools</td>
+                  <td className="px-6 py-4">
+                    Spring Boot (Basics), Docker (Basics), Git
+                  </td>
+                  <td className="px-6 py-4 text-yellow-400">Intermediate</td>
+                </tr>
+
+                <tr className="hover:bg-white/5 transition">
+                  <td className="px-6 py-4">Data & AI</td>
+                  <td className="px-6 py-4">
+                    Data Analysis, Excel, AI Prompt Engineering, ML Basics
+                  </td>
+                  <td className="px-6 py-4 text-blue-400">Working Knowledge</td>
+                </tr>
+
+                <tr className="hover:bg-white/5 transition">
+                  <td className="px-6 py-4">Systems & Practices</td>
+                  <td className="px-6 py-4">
+                    Clean Code, Debugging, Agile Basics, System Design Fundamentals
+                  </td>
+                  <td className="px-6 py-4 text-blue-400">Working Knowledge</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </section>
       </AnimatedSection>
 
-      <div className="max-w-4xl mx-auto border-t border-white/10" />
+      <div className="max-w-5xl mx-auto border-t border-white/10" />
 
       {/* EXPERIENCE */}
-<AnimatedSection>
-  <section id="experience" className="max-w-4xl mx-auto">
-    <h2 className="text-4xl font-bold text-center mb-10">Experience</h2>
+      <AnimatedSection>
+        <section id="experience" className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-10">Experience</h2>
 
-    {/* Full-Time */}
-    <div className="bg-[#121212] p-6 rounded-xl mb-6">
-      <h3 className="text-xl font-semibold">
-        Technology Executive — PHN Technology
-      </h3>
-      <p className="text-gray-400 mb-4">2024 – Present</p>
+          <div className="bg-[#121212] p-6 rounded-xl mb-6">
+            <h3 className="text-xl font-semibold">
+              Technology Executive — PHN Technology
+            </h3>
+            <p className="text-gray-400 mb-4">2024 – Present</p>
 
-      <ul className="list-disc list-inside text-gray-400 space-y-2">
+            <ul className="list-disc list-inside text-gray-400 space-y-3">
+              <li>
+    Designed and developed modular software components for <strong>ASTOR</strong>,
+    a humanoid robot with voice modulation and interactive behavior, using
+    <strong> Java and Python</strong> with event-driven architecture and clean code practices.
+  </li>
 
-<li>Designed and implemented software components for ASTOR,
-   a humanoid robot with voice modulation and interactive behaviour, using modular code structures, event‑driven logic, and API integrations to control dialogue flows and state transitions.</li>
-<li>Built a smart ArUco scanning pipeline to detect and track ArUco markers from camera feeds,
-   integrating OpenCV‑style image processing and Python/Java services to trigger actions in robotics and dashboard interfaces.</li>
-<li>Developed control logic for a bionic hand with 3D‑printed components, wiring sensor data (glove/IMU/flex sensors)
-   to motor commands and writing mapping algorithms that convert live hand gestures into smooth, real‑time actuation.</li>
-<li>Applied data structures and algorithms (arrays, lists, hash maps, basic graph/queue logic) in project code to handle sensor streams, 
-  lookups, and task scheduling efficiently, demonstrating readiness for large‑scale systems.</li>
-      </ul>
-    </div>
+  <li>
+    Implemented backend logic to manage dialogue flows, state transitions,
+    and sensor-driven events, following principles of
+    <strong> scalable system design and separation of concerns</strong>.
+  </li>
 
-    {/* Internship - UniConverge */}
-    <div className="bg-[#121212] p-6 rounded-xl mb-6">
-      <h3 className="text-xl font-semibold">
-        Core Java Developer Intern — UniConverge Technologies
-      </h3>
-      <p className="text-gray-400 mb-4">Aug 2024 – Sep 2024</p>
+  <li>
+    Built an <strong>ArUco marker detection and tracking pipeline</strong> using
+    computer vision concepts, integrating camera feeds with backend services
+    to trigger real-time actions and dashboard updates.
+  </li>
 
-      <ul className="list-disc list-inside text-gray-400 space-y-2">
-        <li>Worked with database‑backed logic, wiring Java code to SQL operations and ensuring correct data flow between service and persistence layers.</li>
-        <li>Used Git and code reviews in a team environment, aligning with standard engineering practices followed in large product companies.</li>
-        <li>Contributed to backend APIs designed for cloud deployment, gaining exposure to deploying and testing services on cloud platforms.</li>
-      </ul>
-    </div>
+  <li>
+    Developed control systems for a <strong>bionic hand</strong> using sensor data
+    (IMU, flex sensors, glove inputs), mapping real-time inputs to motor outputs
+    through optimized algorithms for smooth actuation.
+  </li>
 
-    {/* Internship - Next Forger */}
-    <div className="bg-[#121212] p-6 rounded-xl">
-      <h3 className="text-xl font-semibold">
-        Data Analyst Intern — Next Forger
-      </h3>
-      <p className="text-gray-400 mb-4">Feb 2024 – Jun 2024</p>
+  <li>
+    Applied <strong>data structures and algorithms</strong> (arrays, lists, hash maps,
+    queues) to efficiently process sensor streams, task scheduling,
+    and real-time decision logic.
+  </li>
 
-      <ul className="list-disc list-inside text-gray-400 space-y-2">
-        <li>Built Excel dashboards with pivot tables, charts, and formulas to track key metrics and help teams monitor workflows and performance.</li>
-        <li>sed prompting with AI tools to generate exploratory queries, insights, and documentation, then validated and refined results with statistical checks and domain logic.</li>
-        <li>Collaborated with developers to integrate analytical outputs into applications, sharing cleaned datasets, API‑ready views, and clear requirements for backend usage.</li>
-      </ul>
-    </div>
+  <li>
+    Collaborated in a Git-based development environment, following
+    <strong> version control, debugging, and iterative development workflows</strong>
+    aligned with industry software engineering standards.
+  </li>
 
+  <li>
+    Gained exposure to <strong>cloud-ready application design</strong> and automation-friendly
+    systems, building software components that can integrate with CI/CD pipelines
+    and cloud infrastructure.
+  </li>
 
-          <a
-            href="/experience"
-            className="inline-block mt-6 text-blue-500 hover:underline"
-          >
-            View full experience →
-          </a>
+            </ul>
+          </div>
+
+          <div className="bg-[#121212] p-6 rounded-xl mb-6">
+            <h3 className="text-xl font-semibold">
+              Software Developer Intern — UniConverge Technologies
+            </h3>
+            <p className="text-gray-400 mb-4">Aug 2024 – Sep 2024</p>
+
+            <ul className="list-disc list-inside text-gray-400 space-y-3">
+              <li>
+    Developed <strong>Core Java backend modules</strong> integrated with
+    relational databases, writing optimized SQL queries and ensuring
+    reliable data flow between application and persistence layers.
+  </li>
+
+  <li>
+    Worked on <strong>REST-style backend APIs</strong>, focusing on clean API contracts,
+    error handling, and maintainable service-layer logic.
+  </li>
+
+  <li>
+    Used <strong>Git</strong> for version control, participated in code reviews,
+    and followed structured development workflows similar to large
+    product-based organizations.
+  </li>
+
+  <li>
+    Gained hands-on exposure to <strong>cloud deployment concepts</strong>,
+    understanding how backend services are built, tested, and prepared
+    for deployment on cloud platforms.
+  </li>
+
+  <li>
+    Strengthened fundamentals in <strong>object-oriented programming,
+    debugging, and backend system design</strong>.
+  </li>
+</ul>
+          </div>
+
+          <div className="bg-[#121212] p-6 rounded-xl">
+            <h3 className="text-xl font-semibold">
+              Data Analyst Intern — Next Forger
+            </h3>
+            <p className="text-gray-400 mb-4">Feb 2024 – Jun 2024</p>
+
+            <ul className="list-disc list-inside text-gray-400 space-y-3">
+              <li>
+    Designed <strong>Excel dashboards</strong> using pivot tables, charts,
+    formulas, and data validation to track operational metrics
+    and business performance.
+  </li>
+
+  <li>
+    Performed <strong>data cleaning, transformation, and analysis</strong>
+    to prepare datasets for reporting and downstream application usage.
+  </li>
+
+  <li>
+    Used <strong>AI-based prompting techniques</strong> to generate insights,
+    exploratory queries, and documentation, followed by validation
+    using logical and statistical checks.
+  </li>
+
+  <li>
+    Collaborated with software developers to deliver
+    <strong>API-ready datasets and analytical outputs</strong>,
+    improving integration between analytics and backend systems.
+  </li>
+
+  <li>
+    Developed a strong understanding of <strong>data-driven decision making</strong>
+    and how analytics supports scalable software solutions.
+  </li>
+</ul>
+          </div>
         </section>
       </AnimatedSection>
 
-      <div className="max-w-4xl mx-auto border-t border-white/10" />
+      <div className="max-w-5xl mx-auto border-t border-white/10" />
 
-      {/* RESUME */}
+      {/* CONTACT */}
       <AnimatedSection>
-        <section id="resume" className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">Resume</h2>
+        <section id="contact" className="max-w-4xl mx-auto text-center pb-24">
+          <h2 className="text-4xl font-bold mb-6">Contact</h2>
 
           <p className="text-gray-400 mb-8">
-            Download my resume to learn more about my professional experience,
-            projects, and technical skills.
+            Feel free to reach out for software development, cloud, or DevOps opportunities.
           </p>
 
-          <a
-            href="/resume/Piyush_Gadiya_Resume.pdf"
-            target="_blank"
-            className="inline-block px-8 py-4 bg-blue-500 rounded-lg
-            font-semibold hover:bg-blue-600 transition"
-          >
-            Download Resume
-          </a>
-        </section>
-      </AnimatedSection>
-
-      <div className="max-w-4xl mx-auto border-t border-white/10" />
-
-      {/* CTA */}
-      <AnimatedSection>
-        <section id="CTA" className="max-w-4xl mx-auto text-center pb-24">
-          <div
-            className="bg-[#121212] rounded-2xl p-10 md:p-14 transition
-            hover:shadow-xl hover:shadow-blue-500/10"
-          >
-            <h2 className="text-4xl font-bold mb-6">
-              Let’s Build Something Impactful
-            </h2>
-
-            <p className="text-gray-400 mb-10 max-w-2xl mx-auto">
-              I’m open to software development, AI, and cloud-focused roles.
-              If you’re looking for someone who enjoys solving real-world
-              problems, let’s connect.
-            </p>
+          <div className="flex justify-center gap-6 flex-wrap">
+            <a
+              href="https://github.com/weeb999"
+              target="_blank"
+              className="px-6 py-3 border border-white/20 rounded-lg hover:bg-white/10 transition"
+            >
+              GitHub
+            </a>
 
             <a
-              href="/contact"
-              className="inline-block px-10 py-4 bg-blue-500 rounded-lg
-              font-semibold hover:bg-blue-600 transition"
+              href="https://www.linkedin.com"
+              target="_blank"
+              className="px-6 py-3 border border-white/20 rounded-lg hover:bg-white/10 transition"
             >
-              Get in Touch
+              LinkedIn
+            </a>
+
+            <a
+              href="mailto:piyushgadiya123@gmail.com"
+              className="px-6 py-3 border border-white/20 rounded-lg hover:bg-white/10 transition"
+            >
+              Email
             </a>
           </div>
         </section>
