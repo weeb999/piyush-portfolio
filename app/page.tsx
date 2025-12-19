@@ -131,14 +131,14 @@ export default function Home() {
           desc: "CNN-based medical image classifier",
           stack: "Python • CNN • Flask",
           link: "https://github.com/weeb999/Skin-Cancer-Prediction",
-          img: "/images/projects/skin-cancer.png",
+          img: "/images/projects/skin-cancer.png.webp",
         },
         {
           title: "Aster Humanoid Robot",
           desc: "Voice & state-driven humanoid system",
           stack: "Java • Python • Robotics",
           link: "https://github.com/weeb999/Aster-humanoid",
-          img: "/images/projects/aster.png",
+          img: "/images/projects/aster.png.webp",
         },
         {
           title: "Bionic Hand",
@@ -152,7 +152,7 @@ export default function Home() {
           desc: "Hardware inventory tracker",
           stack: "Backend • Database",
           link: "https://github.com/weeb999/smart-inventory",
-          img: "/images/projects/inventory.png",
+          img: "/images/projects/inventory.png.webp",
         },
       ].map((project) => (
         <a
@@ -195,6 +195,7 @@ export default function Home() {
       <div className="max-w-5xl mx-auto border-t border-white/10" />
 
       {/* CERTIFICATIONS */}
+{/* CERTIFICATES */}
 <AnimatedSection>
   <section id="certificates" className="max-w-5xl mx-auto">
     <h2 className="text-3xl font-semibold text-center mb-10">
@@ -203,65 +204,48 @@ export default function Home() {
 
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-      {/* UniConverge */}
-      <div
-        className="bg-white border rounded-xl p-6
-        hover:shadow-md hover:-translate-y-1 transition"
-      >
-        <h3 className="font-semibold mb-2">
-          Software Developer Certification
-        </h3>
+      {[
+        {
+          title: "Software Developer Certification",
+          issuer: "UniConverge Technologies",
+          img: "/images/certificates/uniconverge.png.jpg",
+        },
+        {
+          title: "Java Programming",
+          issuer: "Udemy",
+          img: "/images/certificates/udemy-java.png.jpg",
+        },
+        {
+          title: "DSA + 100 LeetCode Problems",
+          issuer: "Udemy / Self Practice",
+          img: "/images/certificates/udemy-dsa.png.webp",
+        },
+      ].map((cert) => (
+        <div
+          key={cert.title}
+          className="bg-white border rounded-xl overflow-hidden
+          hover:shadow-md hover:-translate-y-1 transition"
+        >
+          <div className="relative h-36 w-full">
+            <Image
+              src={cert.img}
+              alt={cert.title}
+              fill
+              className="object-cover"
+            />
+          </div>
 
-        <p className="text-sm text-gray-600 mb-3">
-          Hands-on training in Core Java, backend development concepts,
-          databases, Git workflows, and software engineering fundamentals.
-        </p>
+          <div className="p-5">
+            <h3 className="font-semibold mb-1">
+              {cert.title}
+            </h3>
 
-        <p className="text-xs text-gray-400">
-          Issued by: UniConverge Technologies
-        </p>
-      </div>
-
-      {/* Udemy Java */}
-      <div
-        className="bg-white border rounded-xl p-6
-        hover:shadow-md hover:-translate-y-1 transition"
-      >
-        <h3 className="font-semibold mb-2">
-          Java Programming (Udemy)
-        </h3>
-
-        <p className="text-sm text-gray-600 mb-3">
-          In-depth Java programming covering OOP principles,
-          exception handling, collections, multithreading,
-          and backend-ready coding practices.
-        </p>
-
-        <p className="text-xs text-gray-400">
-          Issued by: Udemy
-        </p>
-      </div>
-
-      {/* DSA + LeetCode */}
-      <div
-        className="bg-white border rounded-xl p-6
-        hover:shadow-md hover:-translate-y-1 transition"
-      >
-        <h3 className="font-semibold mb-2">
-          Data Structures & Algorithms + 100 LeetCode Problems
-        </h3>
-
-        <p className="text-sm text-gray-600 mb-3">
-          Strong foundation in arrays, linked lists, stacks, queues,
-          recursion, hashing, trees, and problem-solving through
-          consistent LeetCode practice.
-        </p>
-
-        <p className="text-xs text-gray-400">
-          Issued by: Udemy / Self-Practice
-        </p>
-      </div>
-
+            <p className="text-sm text-gray-600">
+              Issued by: {cert.issuer}
+            </p>
+          </div>
+        </div>
+      ))}
     </div>
   </section>
 </AnimatedSection>
