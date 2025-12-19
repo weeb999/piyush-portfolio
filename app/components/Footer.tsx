@@ -19,7 +19,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/piyush-gadiya-a422252a8/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition"
