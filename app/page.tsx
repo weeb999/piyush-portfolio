@@ -378,38 +378,31 @@ export default function Home() {
 
       {/* CONTACT */}
       <AnimatedSection>
-        <section id="contact" className="max-w-4xl mx-auto text-center pb-24">
-          <h2 className="text-4xl font-bold mb-6">Contact</h2>
+       <section
+  id="contact"
+  className="max-w-4xl mx-auto text-center py-20"
+>
+  <h2 className="text-3xl font-semibold mb-6">
+    Get in Touch
+  </h2>
 
-          <p className="text-gray-400 mb-8">
-            Feel free to reach out for software development, cloud, or DevOps opportunities.
-          </p>
+  <p className="text-gray-600 mb-8">
+    Open to software, cloud, and AI-driven opportunities.
+  </p>
 
-          <div className="flex justify-center gap-6 flex-wrap">
-            <a
-              href="https://github.com/weeb999"
-              target="_blank"
-              className="px-6 py-3 border border-white/20 rounded-lg hover:bg-white/10 transition"
-            >
-              GitHub
-            </a>
+  <div className="flex justify-center gap-6 text-sm">
+    <a href="mailto:piyushgadiya123@gmail.com" className="hover:text-emerald-600">
+      Email
+    </a>
+    <a href="https://github.com/weeb999" target="_blank" className="hover:text-emerald-600">
+      GitHub
+    </a>
+    <a href="https://www.linkedin.com/in/piyush-gadiya-a422252a8/" target="_blank" className="hover:text-emerald-600">
+      LinkedIn
+    </a>
+  </div>
+</section>
 
-            <a
-              href="https://www.linkedin.com/in/piyush-gadiya-a422252a8/"
-              target="_blank"
-              className="px-6 py-3 border border-white/20 rounded-lg hover:bg-white/10 transition"
-            >
-              LinkedIn
-            </a>
-
-            <a
-              href="mailto:piyushgadiya123@gmail.com"
-              className="px-6 py-3 border border-white/20 rounded-lg hover:bg-white/10 transition"
-            >
-              Email
-            </a>
-          </div>
-        </section>
       </AnimatedSection>
 
     </main>
