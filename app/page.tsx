@@ -151,7 +151,6 @@ export default function Home() {
         <li>Assisted teams with reporting and data analysis tasks</li>
       </ul>
     </div>
-  
 
 
           <Link
@@ -176,7 +175,7 @@ export default function Home() {
           </p>
 
           <a
-            href="/resume/Piyush_Gadiya_Resume.pdf"
+            href="\resume\Piyush_Gadiya_Resume.pdf"
             target="_blank"
             className="inline-block px-8 py-4 bg-blue-500 rounded-lg
             font-semibold hover:bg-blue-600 transition"
