@@ -9,6 +9,9 @@ export default function Navbar() {
         </a>
 
         <div className="flex gap-6 text-gray-300">
+          <a href="#projects" className="hover:text white transition">
+            Projects
+            </a>
           <a href="#skills" className="hover:text-white transition">
             Skills
           </a>

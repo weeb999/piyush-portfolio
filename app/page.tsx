@@ -114,6 +114,130 @@ export default function Home() {
           </div>
         </section>
       </AnimatedSection>
+      {/* PROJECTS */}
+<AnimatedSection>
+  <section id="projects" className="max-w-6xl mx-auto">
+    <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
+
+    <div className="grid md:grid-cols-2 gap-8">
+
+      {/* ASTOR */}
+      <div className="bg-[#121212] p-6 rounded-xl hover:shadow-xl hover:shadow-blue-500/10 transition">
+        <h3 className="text-xl font-semibold mb-3">
+          ASTOR – Humanoid Robot System
+        </h3>
+
+        <p className="text-gray-400 mb-4">
+          Software system for a humanoid robot featuring voice modulation,
+          interactive dialogue handling, and real-time state transitions.
+        </p>
+
+        <ul className="text-gray-400 text-sm space-y-2 mb-6">
+          <li>• Java & Python backend logic</li>
+          <li>• Event-driven architecture</li>
+          <li>• Sensor & hardware integration</li>
+        </ul>
+
+        <div className="flex gap-4">
+          <a
+            href="https://github.com/weeb999/astor-humanoid"
+            target="_blank"
+            className="text-blue-500 hover:underline"
+          >
+            GitHub →
+          </a>
+        </div>
+      </div>
+
+      {/* BIONIC HAND */}
+      <div className="bg-[#121212] p-6 rounded-xl hover:shadow-xl hover:shadow-blue-500/10 transition">
+        <h3 className="text-xl font-semibold mb-3">
+          Gesture Controlled Bionic Hand
+        </h3>
+
+        <p className="text-gray-400 mb-4">
+          Real-time gesture-controlled bionic hand using sensor input mapping
+          and optimized control algorithms.
+        </p>
+
+        <ul className="text-gray-400 text-sm space-y-2 mb-6">
+          <li>• IMU & flex sensor integration</li>
+          <li>• Real-time motor control</li>
+          <li>• Algorithmic gesture mapping</li>
+        </ul>
+
+        <div className="flex gap-4">
+          <a
+            href="https://github.com/weeb999/bionic-hand"
+            target="_blank"
+            className="text-blue-500 hover:underline"
+          >
+            GitHub →
+          </a>
+        </div>
+      </div>
+
+      {/* SMART INVENTORY */}
+      <div className="bg-[#121212] p-6 rounded-xl hover:shadow-xl hover:shadow-blue-500/10 transition">
+        <h3 className="text-xl font-semibold mb-3">
+          Smart Inventory Management App
+        </h3>
+
+        <p className="text-gray-400 mb-4">
+          Inventory system to track sensors and hardware components efficiently
+          for robotics and software projects.
+        </p>
+
+        <ul className="text-gray-400 text-sm space-y-2 mb-6">
+          <li>• Backend CRUD APIs</li>
+          <li>• Search & filtering logic</li>
+          <li>• Database integration</li>
+        </ul>
+
+        <div className="flex gap-4">
+          <a
+            href="https://github.com/weeb999/smart-inventory"
+            target="_blank"
+            className="text-blue-500 hover:underline"
+          >
+            GitHub →
+          </a>
+        </div>
+      </div>
+{/* Skin Cancer Prediction */}
+<div className="bg-[#121212] p-6 rounded-xl hover:shadow-xl hover:shadow-blue-500/10 transition">
+  <h3 className="text-xl font-semibold mb-3">
+    Skin Cancer Prediction System
+  </h3>
+
+  <p className="text-gray-400 mb-4">
+    A deep-learning classifier for dermoscopic images to detect
+    potential skin cancer types using a **Convolutional Neural Network (CNN)**.
+  </p>
+
+  <ul className="text-gray-400 text-sm space-y-2 mb-6">
+    <li>• Image preprocessing & augmentation</li>
+    <li>• CNN model training and evaluation</li>
+    <li>• Flask-based web interface for prediction</li>
+    <li>• Accuracy optimization and ROC/confusion analysis</li>
+  </ul>
+
+  <div className="flex gap-4">
+    <a
+      href="https://github.com/weeb999/Skin-Cancer-Prediction"
+      target="_blank"
+      className="text-blue-500 hover:underline"
+    >
+      GitHub →
+    </a>
+  </div>
+</div>
+
+
+    </div>
+  </section>
+</AnimatedSection>
+
 
       <div className="max-w-5xl mx-auto border-t border-white/10" />
 
@@ -271,7 +395,7 @@ export default function Home() {
             </a>
 
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/piyush-gadiya-a422252a8/"
               target="_blank"
               className="px-6 py-3 border border-white/20 rounded-lg hover:bg-white/10 transition"
             >
