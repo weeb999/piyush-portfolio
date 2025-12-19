@@ -253,11 +253,6 @@ export default function Home() {
             <p className="text-gray-400 mb-4">2024 – Present</p>
 
             <ul className="list-disc list-inside text-gray-400 space-y-3">
-              <li>
-    Designed and developed modular software components for <strong>ASTOR</strong>,
-    a humanoid robot with voice modulation and interactive behavior, using
-    <strong> Java and Python</strong> with event-driven architecture and clean code practices.
-  </li>
 
   <li>
     Implemented backend logic to manage dialogue flows, state transitions,
@@ -278,18 +273,6 @@ export default function Home() {
   </li>
 
   <li>
-    Applied <strong>data structures and algorithms</strong> (arrays, lists, hash maps,
-    queues) to efficiently process sensor streams, task scheduling,
-    and real-time decision logic.
-  </li>
-
-  <li>
-    Collaborated in a Git-based development environment, following
-    <strong> version control, debugging, and iterative development workflows</strong>
-    aligned with industry software engineering standards.
-  </li>
-
-  <li>
     Gained exposure to <strong>cloud-ready application design</strong> and automation-friendly
     systems, building software components that can integrate with CI/CD pipelines
     and cloud infrastructure.
@@ -305,12 +288,7 @@ export default function Home() {
             <p className="text-gray-400 mb-4">Aug 2024 – Sep 2024</p>
 
             <ul className="list-disc list-inside text-gray-400 space-y-3">
-              <li>
-    Developed <strong>Core Java backend modules</strong> integrated with
-    relational databases, writing optimized SQL queries and ensuring
-    reliable data flow between application and persistence layers.
-  </li>
-
+             
   <li>
     Worked on <strong>REST-style backend APIs</strong>, focusing on clean API contracts,
     error handling, and maintainable service-layer logic.
@@ -326,11 +304,6 @@ export default function Home() {
     Gained hands-on exposure to <strong>cloud deployment concepts</strong>,
     understanding how backend services are built, tested, and prepared
     for deployment on cloud platforms.
-  </li>
-
-  <li>
-    Strengthened fundamentals in <strong>object-oriented programming,
-    debugging, and backend system design</strong>.
   </li>
 </ul>
           </div>
@@ -358,18 +331,7 @@ export default function Home() {
     exploratory queries, and documentation, followed by validation
     using logical and statistical checks.
   </li>
-
-  <li>
-    Collaborated with software developers to deliver
-    <strong>API-ready datasets and analytical outputs</strong>,
-    improving integration between analytics and backend systems.
-  </li>
-
-  <li>
-    Developed a strong understanding of <strong>data-driven decision making</strong>
-    and how analytics supports scalable software solutions.
-  </li>
-</ul>
+  </ul>
           </div>
         </section>
       </AnimatedSection>
