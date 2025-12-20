@@ -1,10 +1,8 @@
 import "./globals.css";
-import type { Metadata } from "next";
-
 import TopTabs from "./components/TopTabs";
 import FloatingContact from "./components/FloatingContact";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Piyush Gadiya | Software Developer",
   description: "Portfolio of Piyush Gadiya",
 };
@@ -16,17 +14,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-white text-gray-900 scroll-smooth">
-        {/* Fixed Top Navigation */}
+      <body className="
+        bg-gray-50 text-gray-900
+        dark:bg-slate-900 dark:text-gray-100
+        transition-colors duration-300
+      ">
         <TopTabs />
-
-        {/* Page Content */}
         {children}
-
-        {/* Floating Contact Bar */}
         <FloatingContact />
       </body>
     </html>
   );
 }
-
