@@ -90,7 +90,7 @@ export default function Home() {
 
       {/* ================= PROJECTS ================= */}
       <AnimatedSection>
-        <section id="projects" className="max-w-6xl mx-auto">
+        <section id="projects" className="max-w-6xl mx-auto text-center">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8">
             Selected Projects
           </h2>
@@ -145,7 +145,7 @@ export default function Home() {
 
       {/* ================= EXPERIENCE ================= */}
 <AnimatedSection>
-  <section id="experience" className="max-w-4xl mx-auto">
+  <section id="experience" className="max-w-4xl mx-auto text-center">
     <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8">
       Experience
     </h2>
