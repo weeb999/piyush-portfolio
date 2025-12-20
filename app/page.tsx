@@ -46,7 +46,7 @@ export default function Home() {
 
       {/* ================= SKILLS ================= */}
       <AnimatedSection>
-        <section id="skills" className="max-w-6xl mx-auto">
+        <section id="skills" className="max-w-6xl mx-auto text-center">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8">
             Skills
           </h2>
