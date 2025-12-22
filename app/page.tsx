@@ -7,7 +7,14 @@ import SkillsSection from "./components/SkillsSection";
 
 export default function Home() {
   return (
-    <main className="pt-28 px-6 space-y-32 bg-gray-50 dark:bg-[#0f0f0f]">
+<main className="
+  pt-24 px-6 space-y-28
+  bg-gradient-to-b
+  from-gray-50 to-white
+  dark:from-[#0e0e0e] dark:to-[#0b0b0b]
+">
+
+<div className="max-w-6xl mx-auto border-t border-gray-200 dark:border-white/10" />
 
 
       {/* ================= HERO ================= */}
@@ -24,7 +31,8 @@ export default function Home() {
             Software Developer | Cloud | DevOps | Backend Systems
           </p>
 
-          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-600 dark:text-gray-400">
+
             Technology Executive at PHN Technology with experience building
             scalable backend systems, cloud-ready services, automation pipelines,
             and data-driven applications.
@@ -46,24 +54,45 @@ export default function Home() {
           </div>
         </section>
       </AnimatedSection>
+<div className="max-w-6xl mx-auto border-t border-gray-200 dark:border-white/10" />
 
       {/* ================= EDUCATION ================= */}
 <section id="education" className="max-w-4xl mx-auto">
- <h2 className="text-3xl font-bold mb-10 text-center">Education</h2>
+<div className="mb-10">
+  <div className="mb-10">
+  <h2 className="text-3xl font-bold mb-2">Education</h2>
+  <div className="h-1 w-12 bg-emerald-500 rounded-full" />
+</div>
+
+</div>
 
   <div className="space-y-8">
 
     {/* BE */}
-    <div className="border rounded-xl p-6 hover:shadow-lg transition">
+    <div
+  className="
+  bg-white/90 dark:bg-[#161616]
+  border border-gray-200 dark:border-white/10
+  rounded-2xl p-6
+  backdrop-blur
+  hover:shadow-xl hover:-translate-y-1
+  transition-all duration-300
+"
+
+>
+
+
       <h3 className="text-lg font-semibold">
         Bachelor of Engineering (B.E.) – Information Technology
       </h3>
 
-      <p className="text-gray-700">
+      <p className="text-gray-600 dark:text-gray-400">
+
         Sinhgad Institutes, Pune
       </p>
 
-      <p className="text-sm text-gray-500">
+     <p className="text-gray-600 dark:text-gray-400">
+
         2021 – 2025 · CGPA: <strong>8.8</strong>
       </p>
 
@@ -85,16 +114,29 @@ export default function Home() {
     </div>
 
     {/* 12th */}
-    <div className="border rounded-xl p-6 hover:shadow-lg transition">
+    <div
+  className="
+  bg-white/90 dark:bg-[#161616]
+  border border-gray-200 dark:border-white/10
+  rounded-2xl p-6
+  backdrop-blur
+  hover:shadow-xl hover:-translate-y-1
+  transition-all duration-300
+"
+
+>
+
       <h3 className="text-lg font-semibold">
         Higher Secondary Education (12th – Science)
       </h3>
 
-      <p className="text-gray-700">
+     <p className="text-gray-600 dark:text-gray-400">
+
         Sinhgad College of Science
       </p>
 
-      <p className="text-sm text-gray-500">
+     <p className="text-gray-600 dark:text-gray-400">
+
         Percentage: <strong>90%</strong>
       </p>
 
@@ -110,16 +152,29 @@ export default function Home() {
     </div>
 
     {/* 10th */}
-    <div className="border rounded-xl p-6 hover:shadow-lg transition">
+    <div
+  className="
+  bg-white/90 dark:bg-[#161616]
+  border border-gray-200 dark:border-white/10
+  rounded-2xl p-6
+  backdrop-blur
+  hover:shadow-xl hover:-translate-y-1
+  transition-all duration-300
+"
+
+>
+
       <h3 className="text-lg font-semibold">
         Secondary Education (10th)
       </h3>
 
-      <p className="text-gray-700">
+     <p className="text-gray-600 dark:text-gray-400">
+
         Sarhad English Medium School
       </p>
 
-      <p className="text-sm text-gray-500">
+   <p className="text-gray-600 dark:text-gray-400">
+
         Percentage: <strong>82%</strong>
       </p>
 
@@ -138,96 +193,43 @@ export default function Home() {
   </div>
 </section>
 
+<div className="max-w-6xl mx-auto border-t border-gray-200 dark:border-white/10" />
 
       {/* ================= SKILLS ================= */}
-<section id="skills" className="max-w-6xl mx-auto">
-  <h2 className="text-3xl font-bold mb-10 text-center">Skills</h2>
+<SkillsSection/>
+  
 
-  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<section id="experience" className="max-w-6xl mx-auto">
+  <div className="mb-10">
+    <div className="mb-10">
+  <h2 className="text-3xl font-bold mb-2">Experience</h2>
+  <div className="h-1 w-12 bg-emerald-500 rounded-full" />
+</div>
 
-    {/* Backend */}
-   <div className="border rounded-xl p-6 hover:shadow-lg transition">
-  <div className="flex items-center gap-3 mb-3">
-    <span className="text-emerald-600 text-xl">⚙️</span>
-    <h3 className="font-semibold text-lg">Backend Development</h3>
-  </div>
-
-  <p className="text-gray-700">
-    Java, Python, REST APIs, OOP, Data Structures & Algorithms,
-    Exception Handling, MVC Concepts
-  </p>
+  
 </div>
 
 
-    {/* Databases */}
-    <div className="border rounded-xl p-6 hover:shadow-lg transition">
-      <h3 className="font-semibold text-emerald-600 mb-3">
-        Databases
-      </h3>
-      <p className="text-gray-700">
-        MySQL, SQL Queries, Joins, Indexing (Basics),
-        Schema Design, Data Modeling
-      </p>
-    </div>
-
-    {/* Cloud */}
-    <div className="border rounded-xl p-6 hover:shadow-lg transition">
-      <h3 className="font-semibold text-emerald-600 mb-3">
-        Cloud & DevOps
-      </h3>
-      <p className="text-gray-700">
-        AWS (EC2, S3), CI/CD Basics, Linux,
-        GitHub Actions (Intro), Deployment Concepts
-      </p>
-    </div>
-
-    {/* Frameworks */}
-    <div className="border rounded-xl p-6 hover:shadow-lg transition">
-      <h3 className="font-semibold text-emerald-600 mb-3">
-        Frameworks & Tools
-      </h3>
-      <p className="text-gray-700">
-        Spring Boot (Basics), Docker (Basics),
-        Git, GitHub, Postman
-      </p>
-    </div>
-
-    {/* Data */}
-    <div className="border rounded-xl p-6 hover:shadow-lg transition">
-      <h3 className="font-semibold text-emerald-600 mb-3">
-        Data & Analytics
-      </h3>
-      <p className="text-gray-700">
-        Data Analysis, Excel (Pivot Tables, Dashboards),
-        SQL Reporting, Data Cleaning
-      </p>
-    </div>
-
-    {/* AI */}
-    <div className="border rounded-xl p-6 hover:shadow-lg transition">
-      <h3 className="font-semibold text-emerald-600 mb-3">
-        AI & Automation
-      </h3>
-      <p className="text-gray-700">
-        AI Prompt Engineering, ML Basics,
-        CNN Concepts, Automation Workflows
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<section id="experience" className="max-w-6xl mx-auto">
-  <h2 className="text-3xl font-bold mb-10 text-center">Experience</h2>
-
   <div className="space-y-10">
     {/* PHN */}
-   <div className="border rounded-xl p-6 hover:shadow-lg transition">
+   <div
+  className="
+  bg-white/90 dark:bg-[#161616]
+  border border-gray-200 dark:border-white/10
+  rounded-2xl p-6
+  backdrop-blur
+  hover:shadow-xl hover:-translate-y-1
+  transition-all duration-300
+"
+
+>
+
 
       <h3 className="font-semibold text-lg">
         Technology Executive — PHN Technology
       </h3>
-      <p className="text-sm text-gray-500">2024 – Present</p>
+    <p className="text-gray-600 dark:text-gray-400">
+2024 – Present</p>
 
       <ul className="list-disc pl-6 mt-3 space-y-2 text-gray-700">
         <li>
@@ -254,12 +256,24 @@ export default function Home() {
     </div>
 
     {/* UniConverge */}
-    <div className="border rounded-xl p-6 hover:shadow-lg transition">
+   <div
+  className="
+  bg-white/90 dark:bg-[#161616]
+  border border-gray-200 dark:border-white/10
+  rounded-2xl p-6
+  backdrop-blur
+  hover:shadow-xl hover:-translate-y-1
+  transition-all duration-300
+"
+
+>
+
 
       <h3 className="font-semibold text-lg">
         Software Developer Intern — UniConverge Technologies
       </h3>
-      <p className="text-sm text-gray-500">Aug 2024 – Sep 2024</p>
+     <p className="text-gray-600 dark:text-gray-400">
+Aug 2024 – Sep 2024</p>
 
       <ul className="list-disc pl-6 mt-3 space-y-2 text-gray-700">
         <li>
@@ -278,12 +292,24 @@ export default function Home() {
     </div>
 
     {/* Next Forger */}
-   <div className="border rounded-xl p-6 hover:shadow-lg transition">
+   <div
+  className="
+  bg-white/90 dark:bg-[#161616]
+  border border-gray-200 dark:border-white/10
+  rounded-2xl p-6
+  backdrop-blur
+  hover:shadow-xl hover:-translate-y-1
+  transition-all duration-300
+"
+
+>
+
 
       <h3 className="font-semibold text-lg">
         Data Analyst Intern — Next Forger
       </h3>
-      <p className="text-sm text-gray-500">Feb 2024 – Jun 2024</p>
+      <p className="text-gray-600 dark:text-gray-400">
+Feb 2024 – Jun 2024</p>
 
       <ul className="list-disc pl-6 mt-3 space-y-2 text-gray-700">
         <li>
@@ -310,11 +336,20 @@ export default function Home() {
 
   
 
-  
+  <div className="max-w-6xl mx-auto border-t border-gray-200 dark:border-white/10" />
+
 
 {/* ================= PROJECTS ================= */}
-<section className="max-w-6xl mx-auto">
- <h2 className="text-3xl font-bold mb-10 text-center">Projects</h2>
+<section id = "projects" className="max-w-6xl mx-auto">
+<div className="mb-10">
+  <div className="mb-10">
+  <h2 className="text-3xl font-bold mb-2">Projects</h2>
+  <div className="h-1 w-12 bg-emerald-500 rounded-full" />
+</div>
+
+ 
+</div>
+
 
   <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
@@ -322,10 +357,15 @@ export default function Home() {
     <a
   href="https://github.com/weeb999/Skin-Cancer-Prediction"
   target="_blank"
-  className="group border rounded-xl overflow-hidden
+  className="
+  bg-white/90 dark:bg-[#161616]
+  border border-gray-200 dark:border-white/10
+  rounded-2xl p-6
+  backdrop-blur
+  hover:shadow-xl hover:-translate-y-1
   transition-all duration-300
-  hover:-translate-y-1 hover:shadow-xl
-  hover:border-emerald-500"
+"
+
 >
 
       <div className="relative h-40">
@@ -341,11 +381,13 @@ export default function Home() {
   Skin Cancer Detection System
 </h3>
 
-        <p className="text-sm text-gray-600">
+        <p className="text-gray-600 dark:text-gray-400">
+
           Built a <strong>CNN-based medical image classification system</strong>
           to detect skin cancer from dermoscopic images.
         </p>
-        <p className="text-xs text-gray-500">
+        <p className="text-gray-600 dark:text-gray-400">
+
           Python • CNN • Deep Learning • Flask
         </p>
       </div>
@@ -355,10 +397,15 @@ export default function Home() {
     <a
   href="https://github.com/weeb999/aster"
   target="_blank"
-  className="group border rounded-xl overflow-hidden
+ className="
+  bg-white/90 dark:bg-[#161616]
+  border border-gray-200 dark:border-white/10
+  rounded-2xl p-6
+  backdrop-blur
+  hover:shadow-xl hover:-translate-y-1
   transition-all duration-300
-  hover:-translate-y-1 hover:shadow-xl
-  hover:border-emerald-500"
+"
+
 >
 
     <div className="border rounded-xl overflow-hidden">
@@ -372,11 +419,13 @@ export default function Home() {
       </div>
       <div className="p-4 space-y-1">
         <h3 className="font-semibold group-hover:text-emerald-600 transition">Aster Humanoid Robot</h3>
-        <p className="text-sm text-gray-600">
+       <p className="text-gray-600 dark:text-gray-400">
+
           Developed <strong>backend logic, voice interaction workflows,
           and state-management</strong> for a humanoid robotic system.
         </p>
-        <p className="text-xs text-gray-500">
+       <p className="text-gray-600 dark:text-gray-400">
+
           Java • Python • Robotics • APIs
         </p>
       </div>
@@ -387,10 +436,15 @@ export default function Home() {
     <a
   href="https://github.com/weeb999/bionic hand"
   target="_blank"
-  className="group border rounded-xl overflow-hidden
+className="
+  bg-white/90 dark:bg-[#161616]
+  border border-gray-200 dark:border-white/10
+  rounded-2xl p-6
+  backdrop-blur
+  hover:shadow-xl hover:-translate-y-1
   transition-all duration-300
-  hover:-translate-y-1 hover:shadow-xl
-  hover:border-emerald-500"
+"
+
 >
 
     <div className="border rounded-xl overflow-hidden">
@@ -404,11 +458,13 @@ export default function Home() {
       </div>
       <div className="p-4 space-y-1">
         <h3 className="font-semibold group-hover:text-emerald-600 transition">Bionic Hand</h3>
-        <p className="text-sm text-gray-600">
+       <p className="text-gray-600 dark:text-gray-400">
+
           Implemented <strong>sensor-to-motor mapping algorithms</strong>
           to convert live hand gestures into smooth robotic movements.
         </p>
-        <p className="text-xs text-gray-500">
+        <p className="text-gray-600 dark:text-gray-400">
+
           Sensors • Control Logic • Embedded Systems
         </p>
       </div>
@@ -417,22 +473,37 @@ export default function Home() {
 
   </div>
 </section>
+<div className="max-w-6xl mx-auto border-t border-gray-200 dark:border-white/10" />
 
 
    {/* ================= CERTIFICATIONS ================= */}
 <section id="certificates" className="max-w-6xl mx-auto">
-<h2 className="text-3xl font-bold mb-10 text-center">Certifications</h2>
+<div className="mb-10">
+  <div className="mb-10">
+  <h2 className="text-3xl font-bold mb-2">Certifications</h2>
+  <div className="h-1 w-12 bg-emerald-500 rounded-full" />
+</div>
+
+
+</div>
+
 
   {/* GRID CONTAINER */}
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
     {/* CERT 1 */}
     <div
-      className="group border rounded-xl p-5 text-center
-      transition-all duration-300
-      hover:-translate-y-1 hover:shadow-xl
-      hover:border-emerald-500"
-    >
+  className="
+  bg-white/90 dark:bg-[#161616]
+  border border-gray-200 dark:border-white/10
+  rounded-2xl p-6
+  backdrop-blur
+  hover:shadow-xl hover:-translate-y-1
+  transition-all duration-300
+"
+
+>
+
       <img
         src="/images/certificates/uniconverge.png.jpg"
         alt="UniConverge"
@@ -441,19 +512,27 @@ export default function Home() {
       <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition">
         Software Developer
       </h3>
-      <p className="text-sm text-gray-600">UniConverge Technologies</p>
-      <p className="text-xs text-gray-500 mt-1">
+     <p className="text-gray-600 dark:text-gray-400">
+UniConverge Technologies</p>
+      <p className="text-gray-600 dark:text-gray-400">
+
         Java • Backend • APIs
       </p>
     </div>
 
     {/* CERT 2 */}
     <div
-      className="group border rounded-xl p-5 text-center
-      transition-all duration-300
-      hover:-translate-y-1 hover:shadow-xl
-      hover:border-emerald-500"
-    >
+  className="
+  bg-white/90 dark:bg-[#161616]
+  border border-gray-200 dark:border-white/10
+  rounded-2xl p-6
+  backdrop-blur
+  hover:shadow-xl hover:-translate-y-1
+  transition-all duration-300
+"
+
+>
+
       <img
         src="/images/certificates/udemy-java.png.jpg"
         alt="Java"
@@ -462,19 +541,27 @@ export default function Home() {
       <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition">
         Java Programming
       </h3>
-      <p className="text-sm text-gray-600">Udemy</p>
-      <p className="text-xs text-gray-500 mt-1">
+      <p className="text-gray-600 dark:text-gray-400">
+Udemy</p>
+      <p className="text-gray-600 dark:text-gray-400">
+
         OOP • Collections • Multithreading
       </p>
     </div>
 
     {/* CERT 3 */}
     <div
-      className="group border rounded-xl p-5 text-center
-      transition-all duration-300
-      hover:-translate-y-1 hover:shadow-xl
-      hover:border-emerald-500"
-    >
+  className="
+  bg-white/90 dark:bg-[#161616]
+  border border-gray-200 dark:border-white/10
+  rounded-2xl p-6
+  backdrop-blur
+  hover:shadow-xl hover:-translate-y-1
+  transition-all duration-300
+"
+
+>
+
       <img
         src="/images/certificates/udemy-dsa.png.webp"
         alt="DSA"
@@ -483,19 +570,27 @@ export default function Home() {
       <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition">
         DSA & 100+ LeetCode
       </h3>
-      <p className="text-sm text-gray-600">Udemy / Practice</p>
-      <p className="text-xs text-gray-500 mt-1">
+      <p className="text-gray-600 dark:text-gray-400">
+Udemy / Practice</p>
+      <p className="text-gray-600 dark:text-gray-400">
+
         Arrays • Trees • Hashing
       </p>
     </div>
 
     {/* CERT 4 */}
     <div
-      className="group border rounded-xl p-5 text-center
-      transition-all duration-300
-      hover:-translate-y-1 hover:shadow-xl
-      hover:border-emerald-500"
-    >
+  className="
+  bg-white/90 dark:bg-[#161616]
+  border border-gray-200 dark:border-white/10
+  rounded-2xl p-6
+  backdrop-blur
+  hover:shadow-xl hover:-translate-y-1
+  transition-all duration-300
+"
+
+>
+
       <img
         src="/images/certificates/jira.png"
         alt="JIRA"
@@ -504,8 +599,10 @@ export default function Home() {
       <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition">
         JIRA & Agile
       </h3>
-      <p className="text-sm text-gray-600">Atlassian</p>
-      <p className="text-xs text-gray-500 mt-1">
+      <p className="text-gray-600 dark:text-gray-400">
+Atlassian</p>
+      <p className="text-gray-600 dark:text-gray-400">
+
         Scrum • Agile • Issue Tracking
       </p>
     </div>
@@ -513,19 +610,36 @@ export default function Home() {
   </div>
 </section>
 
+<div className="max-w-6xl mx-auto border-t border-gray-200 dark:border-white/10" />
 
 
       {/* ================= CONTACT ================= */}
       <AnimatedSection>
         <section id="contact" className="max-w-4xl mx-auto text-center py-20">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
-            Get in Touch
-          </h2>
+        <div className="mb-10">
+          <div className="mb-10">
+  <h2 className="text-3xl font-bold mb-2">Get in Touch</h2>
+  <div className="h-1 w-12 bg-emerald-500 rounded-full" />
+</div>
+
+ 
+</div>
+
 
           <div className="flex justify-center gap-8 text-sm font-semibold">
-            <a href="mailto:piyushgadiya123@gmail.com">Email</a>
-            <a href="https://github.com/weeb999" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/piyush-gadiya-a422252a8/" target="_blank">LinkedIn</a>
+            <a href="mailto:piyushgadiya123@gmail.com"  className="relative text-gray-600 dark:text-gray-400
+  after:absolute after:left-0 after:-bottom-1
+  after:h-[2px] after:w-0 after:bg-emerald-500
+  after:transition-all hover:after:w-full
+  hover:text-emerald-500"
+>Email</a>
+            <a href="https://github.com/weeb999" className="relative text-gray-600 dark:text-gray-400
+  after:absolute after:left-0 after:-bottom-1
+  after:h-[2px] after:w-0 after:bg-emerald-500
+  after:transition-all hover:after:w-full
+  hover:text-emerald-500"
+target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/piyush-gadiya-a422252a8/"  target="_blank">LinkedIn</a>
           </div>
         </section>
       </AnimatedSection>

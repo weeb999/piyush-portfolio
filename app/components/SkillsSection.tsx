@@ -71,13 +71,27 @@ export default function SkillsSection() {
 
   return (
     <section id="skills" className="max-w-6xl mx-auto">
-      {/* Heading */}
+      {/* Heading */}<div className="mb-10">
+  <h2 className="text-3xl font-bold mb-2">Skills</h2>
+  <div className="h-1 w-12 bg-emerald-500 rounded-full" />
+</div>
+
       <h2 className="text-3xl font-bold mb-8 tracking-tight">
         Skills
       </h2>
 
       {/* Category Selector */}
-      <div className="flex flex-wrap gap-3 mb-10">
+      <div
+  className="
+    border border-gray-200 dark:border-white/10
+    rounded-2xl p-6
+    bg-white/80 dark:bg-[#121212]/80
+    backdrop-blur
+    hover:shadow-xl hover:-translate-y-1
+    transition-all duration-300
+  "
+>
+
         {CATEGORIES.map((category) => (
           <button
             key={category}
@@ -95,7 +109,17 @@ export default function SkillsSection() {
       </div>
 
       {/* Skills Display */}
-      <div className="border rounded-2xl p-8 hover:shadow-lg transition">
+      <div
+  className="
+    border border-gray-200 dark:border-white/10
+    rounded-2xl p-6
+    bg-white/80 dark:bg-[#121212]/80
+    backdrop-blur
+    hover:shadow-xl hover:-translate-y-1
+    transition-all duration-300
+  "
+>
+
         <div className="flex items-center gap-4 mb-6">
           <span className="text-3xl">
             {SKILLS[active].icon}

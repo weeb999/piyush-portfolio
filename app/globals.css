@@ -11,3 +11,26 @@ section {
 h1, h2, h3 {
   letter-spacing: -0.02em;
 }
+/* ---------- Dark Mode Base ---------- */
+
+.dark {
+  background-color: #0e0e0e;
+  color: #e5e7eb; /* gray-200 */
+}
+
+/* Text hierarchy */
+.dark h1,
+.dark h2,
+.dark h3 {
+  color: #f9fafb; /* gray-50 */
+}
+
+.dark p,
+.dark li {
+  color: #d1d5db; /* gray-300 */
+}
+
+/* Muted text */
+.dark .text-muted {
+  color: #9ca3af; /* gray-400 */
+}
