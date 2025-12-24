@@ -41,7 +41,7 @@ export default function TopTabs() {
   return (
     <header className="fixed top-0 inset-x-0 z-50">
       <div className="dark:bg-[#141414]/90
- backdrop-blur border-b border-gray-200 dark:border-white/10">
+   backdrop-blur border-b border-gray-200 dark:border-white/10">
         <nav className="max-w-6xl mx-auto px-6">
           <ul className="flex items-center gap-2 py-4 text-sm font-medium">
             {sections.map((id) => (

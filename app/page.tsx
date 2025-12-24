@@ -592,7 +592,7 @@ Udemy / Practice</p>
 >
 
       <img
-        src="/images/certificates/jira.png"
+        src="/images/certificates/image.png"
         alt="JIRA"
         className="h-20 mx-auto mb-4 object-contain"
       />
